@@ -587,18 +587,18 @@
 @media screen and (max-width: 980px) {
     /*index.html*/
     #warpper{
-        min-width: 675px;
+        min-width: 650px;
     }
     #middle {
         height: 1380px;
     }
 
     .leftPart {
-        width: 48%;
+        width: 38%;
     }
 
     .rightPart {
-        width: 48%;
+        width: 58%;
     }
 
     .slide {
@@ -702,10 +702,10 @@
 }
 
 /*screen 480px*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     /*index.html*/
     #warpper{
-        min-width: 440px;
+        min-width: 480px;
     }
     #top-nav {
         height: 310px;
@@ -826,7 +826,7 @@
     }
 
     .rightPart .part-3 .part-3-body-menu {
-        height: 1579px;
+        height: 1100px;
     }
 
     .rightPart .part-3 .part-3-body .food li {
