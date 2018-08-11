@@ -1,123 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-<link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
-<title>Bendemeer Delights:Home</title>
-<link href="css/style.css" type="text/css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32"/>
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <title>Bendemeer Delights:Home</title>
+	<!-- Javascript Section -->
+	<script src="js/allPage.js"></script>
+	<!-- Style Section -->
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/search.css">
+	<!-- JQuery Section -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
 </head>
 <body>
-<div class="container">
-	<header>
-	<div id="top">
-		<div class="top_nav">
-			<a href="comingsoon.html">Set Home</a> | <a href="comingsoon.html">Add to Favorites</a>
-		</div>
-		<a href="index.html">
-		<div class="logo">
-		<h1><img src="images/header.jpg" alt="Bendemeer Delights"></h1>
-		</div></a>
-		<div style="clear:both;"></div>
-	</div>
-	<div style="clear:both;"></div>
-	<nav>
-		<ul>
-			<li style="background:#111;"><a href="index.html">Home</a></li>
-			<li><a href="menu.html">Menu</a></li>
-			<li><a href="news.html">News</a></li>
-			<li><a href="delivery.html">Delivery</a></li>
-			<li><a href="joininus.html">Join-in us</a></li>
-            <div id="search" style="float: right;">
-                <input type="text" style="float: left;margin-top: 5px;width:200px;height: 25px">
-                <input type="button" value="search" style="margin-top: 5px;height: 29px;margin-right:5px" onClick="window.location.href='comingsoon.html'">
+<!--WARPPER START-->
+<div id="warpper">
+    <!--HEAD START-->
+    <div id="top">
+        <div class="top-hearer">
+            <a href="#" onclick="pop1()">Set Home |</a>
+            <a href="#" onclick="pop1()">Add to Favorites</a>
+        </div>
+        <a href="index.html"><img src="images/header.jpg" alt="Bendemeer Delights"></a>
+    </div>
+    <!--HEAD END-->
+    <!--NAV STRAT-->
+    <nav id="top-nav" class="open">
+        <div class="min-header">
+            <i onclick="openHeader()" class="fa fa-bars fa-lg"></i>
+        </div>
+        <a href="index.html"><i class="fa fa-home fa-lg"></i>&nbsp;Home</a>
+        <a href="menu.html"><i class="fa fa-bars fa-lg"></i>&nbsp;Menu</a>
+        <a href="news.html"><i class="fa fa-newspaper-o fa-lg"></i>&nbsp;News & Info</a>
+        <a href="delivery.html"><i class="fa fa-map-o fa-lg"></i>&nbsp;Delivery</a>
+        <a href="joininus.html"><i class="fa fa-group fa-lg"></i>&nbsp;Join-in us</a>
+    </nav>
+    <!--NAV END-->
+    <div id="middle">
+        <!--LEFTPART START-->
+        <div class="leftPart">
+            <div class="part-1">
+                <div class="part-1-head">Business Description</div>
+                <div class="part-1-body">
+                    <p>A healthy food store which provides you plenty
+                        of options of Local Delights. </p>
+                </div>
             </div>
-			<div style="clear:both"></div>
+            <div class="part-2">
+                <div class="part-2-head">Contact Info</div>
+                <div class="part-2-body">
+                    <p>Sam Woo Siak Ho</p>
+                    <br>
+                    <p>+65 93826165</p>
+                    <br>
+                    <p>sam_woo@yahoo.com</p>
+                </div>
+            </div>
+            <div class="part-3">
+                <div class="part-3-head">News</div>
+                <div class="part-3-body">
+                    <ul>                        
+					    <li onclick="pop2()"> Promotion August 2018<span class="icon">new</span></li>
+                        <li onclick="pop2()"> Promotion July 2018</li>
+                        <li onclick="pop2()"> Promotion June 2018 </li>
+                        <li onclick="pop2()"> Promotion May 2018</li>
+                        <li onclick="pop2()"> Promotion April 2018</li>
+                        <li onclick="pop2()"> Promotion March 2018</li>
+                        <li onclick="pop2()"> Promotion February 2018</li>
+                        <li onclick="pop2()"> Promotion January 2018</li>
 
-		</ul>
-	</nav>
-	</header>
-	<div style="clear:both"></div>
-	<section style=" margin-top:5px;">
-		<div class="left">
-			<div class="notice index_con">
-				<h3>Business Description</h3>
-	           	<div class="left_con">
-					<p>A healthy food store which provides you plenty of options of Local Delights.
-					<br />
-					<span style="padding-left:100px;">2018/05/19</span>
-					</p>
-				</div>
-			</div>
-			<div class="index_con ci">
-				<h3>Contact Info</h3>
-				<div class="left_con" >
-					<p>Sam Woo Siak Ho</p><br/>
-					<p>+65 93826165</p><br/>
-					<p>sam_woo@yahoo.com</p><br/>
-				</div>
-			</div>
-			<div class="index_con new_article">
-				<h3>News</h3>
-				<div class="left_con">
-					<ul>
-						<li><a href="comingsoon.html">Promotion June 2018</a></li>
-						<li><a href="comingsoon.html">Promotion May 2018</a></li>
-						<li><a href="comingsoon.html">Promotion April 2018</a></li>
-						<li><a href="comingsoon.html">Promotion March 2018</a></li>
-						<li><a href="comingsoon.html">Promotion February 2018</a></li>
-						<li><a href="comingsoon.html">Promotion January 2018</a></li>
-						<li><a href="comingsoon.html">Promotion December 2017</a></li>
-						<li><a href="comingsoon.html">Promotion November 2017</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="right">
-            <article>
-			<div class="index_con">
-				<h3>Introduction</h3>
-				<div class="right_con">
-				<img src="images/logo.jpg" alt="logo" style="float:left; padding:5px; width:180px; height:130px;" />
-				    <p><h1>History</h1>Bendemeer Delights is established in 2016 by Mr Sam Woo Siak Ho,
-					who is also the owner of a Vegetarian Store at Hougang Mall, and a cafe shop at Bendemeer Market & Food Centre.
-					The store provides Local Delights with all the original recipes,it's a very popular food store at Boon Keng Area.</p>
-					<p><h1>Chef</h1>Chef Lim is an experienced chef from Singapore.He used to work in Crystal Jade Restaurant. </p>
-					<div style="clear:both;"></div>
-				</div>
-			</div>
-            <article>
-			<div class="index_con food">
-				<h3>Foods show</h3>
-				<div class="right_con food" style="height:120px;">
-					<ul><figure>
-						<li><img src="images/food1.jpg" alt="Food Sample"/></li>
-						<li><img src="images/food2.jpg" alt="Food Sample"/></li>
-						<li><img src="images/food3.jpg" alt="Food Sample"/></li>
-						<li><img src="images/food4.jpg" alt="Food Sample"/></li>
-						<li><img src="images/food5.jpg" alt="Food Sample"/></li>
-						<li><img src="images/food4.jpg" alt="Food Sample"/></li>
-						<li><img src="images/food3.jpg" alt="Food Sample"/></li>
-					<figure></ul>
-					<div style="clear:both;"></div>
-				</div>
-			</div>
+                    </ul>
 
-		</div>
-		<div style="clear:both;"></div>
-	<div style="height:10px;"></div>
-		<div class="index_con link">
-			<h3>Friendly link </h3>
-			<div class="right_con">
-				<a href="http://www.google.com" target="_blank">Google</a> | <a href="http://www.facebook.com" target="_blank">Facebook</a> | <a href="http://www.youtube.com" target="_blank">Youtube</a>
-			</div>
-		</div>
-	</section>
-	<footer><h4>Bendemeer Delights #01-06 Bendemeer Market & Food Centre</h4>
-		<a href="https://www.google.com/maps/place/Bendemeer+delights/@1.3188401,103.8604498,17z/data=!3m1!4b1!4m5!3m4!1s0x31da19d22f5ec9e1:0xe20ffa3f56111016!8m2!3d1.3188401!4d103.8626385?hl=zh-CN" target="_blank">Click to Google Map</a>
-	    <h4>Pictures provided by Mr Sam Woo.</h4>
-	</footer>
+                </div>
+            </div>
+
+
+        </div>
+        <!--LEFTPART END-->
+        <!--RIGHTPART START-->
+        <div class="rightPart">
+            <div class="part-1">
+                <div class="slide" id="lunbo">
+                    <ul>
+                        <li><img id="lunbo-img" src="images/slide1.jpg"></li>
+                        <li><img src="images/slide2.jpg"></li>
+                        <li><img src="images/slide3.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="part-2">
+                <div class="part-2-head">Introduction</div>
+                <div class="part-2-body index-2">
+                    <h2>History</h2>
+                    <p>Bendemeer Delights is established in 2016 by Mr Sam Woo Siak Ho,
+                        who is also the owner of a Vegetarian Store at Hougang Mall,
+                        and a cafe shop at Bendemeer Market & Food Centre. The store
+                        provides Local Delights with all the original recipes,
+                        it's a very popular food store at Boon Keng Area.</p>
+                    <br>
+                    <h2>Chef</h2>
+                    <p>Chef Lim is an experienced chef from Singapore.He used to work
+                        in Crystal Jade Restaurant.</p>
+                </div>
+            </div>
+            <!--Foods show-->
+            <div class="part-3">
+                <div class="part-3-head">Foods show</div>
+                <div class="part-3-body">
+                    <div class="container index">
+                        <ul class="gallery">
+                            <li><a href="images/food1.jpg"><img id="zu_1" src="images/food1.jpg"/></a></li>
+                            <li><a href="images/food2.jpg"><img id="zu_2" src="images/food2.jpg"/></a></li>
+                            <li><a href="images/food3.jpg"><img id="zu_3" src="images/food3.jpg"/></a></li>
+                            <li><a href="images/food4.jpg"><img id="zu_4" src="images/food4.jpg"/></a></li>
+                            <li><a href="images/food5.jpg"><img id="zu_5" src="images/food5.jpg"/></a></li>
+                            <li><a href="images/food6.jpg"><img id="zu_6" src="images/food6.jpg"/></a></li>
+                            <li><a href="images/food1.jpg"><img id="zu_7" src="images/food1.jpg"/></a></li>
+                            <li><a href="images/food2.jpg"><img id="zu_8" src="images/food2.jpg"/></a></li>
+                            <li><a href="images/food5.jpg"><img id="zu_9" src="images/food5.jpg"/></a></li>
+                            <li><a href="images/food6.jpg"><img id="zu_10" src="images/food6.jpg"/></a></li>
+                        </ul>
+                        <div class="clear"></div>
+                        </pre>
+                    </div>
+                    <script src="js/jquery-1.9.1.min.js"></script>
+                    <script src="js/zoom.min.js"></script>
+                    <div style="text-align:center;clear:both">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--RIGHTPART END-->
+    </div>
+    <div id="bottom">
+        <div class="part-1">
+            <div class="part-1-head">Friendly link</div>
+            <div class="part-1-body">
+                <a href="http://www.google.com"> Google &nbsp&nbsp&nbsp</a>/
+                <a href="http://www.facebook.com"> &nbsp&nbspFacebook &nbsp&nbsp&nbsp</a>/
+                <a href="http://www.youtube.com"> &nbspYoutube</a>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER START-->
+    <div id="footer">
+        <p>Bendemeer Delights #01-06 Bendemeer Market & Food Centre</p>
+        <p><a href="https://goo.gl/maps/xtTsLAmDs6U2">Click to Google Map</a></p>
+        <p>Pictures provided by Mr Sam Woo.</p>
+    </div>
+    <!--FOOTER END-->
 </div>
+<!--WARPPER END-->
 </body>
+<script>
+    var imgH = $('#lunbo-img').height;
+    $('.slide').css('height', 'imgH');
+    var slide = document.getElementById('lunbo').getElementsByTagName("li");
+    var i = 0;
+    var length = slide.length;
+    setInterval(function () {
+        slide[i].style.display = "none";
+        i = ++i === length ? 0 : i;
+        slide[i].style.display = "inline-block";
+    }, 2500);
+
+    function openHeader() {
+        var power = document.getElementById('top-nav').className;
+        if (power === 'open') {
+            $('#top-nav a').hide(300);
+            $('#top-nav button').hide(300);
+            $('#top-nav input').hide(300);
+            $('#top-nav').css('height', '50px');
+            $('#top-nav').removeClass('open');
+        }
+        if (power !== 'open') {
+            $('#top-nav a').show(300);
+            $('#top-nav button').show(300);
+            $('#top-nav input').show(300);
+            $('#top-nav').css('height', '310px');
+            $('#top-nav').addClass('open');
+        }
+    }
+</script>
 </html>
