@@ -394,35 +394,62 @@
 /*}*/
 
 .rightPart .part-3 .part-3-body-join {
-    height: 750px;
+    height: 780px;	
 }
 
-.rightPart .part-3 .part-3-body form {
-    width: 44%;
-    margin: 0 auto;
-    text-align: right;
+.contact-form {
+	width:50%;
+	position: relative;
+	margin:0 auto;
+	padding-bottom: 20px;
 }
-
-.rightPart .part-3 .part-3-body input {
-    width: 70%;
-    height: 35px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    padding: 0 0 0 5px;
-    margin: 0 0 5% 0;
-    outline: none;
+.contact-form div {
+	padding: 2px 0;
 }
-
-
-/*submit button*/
-.rightPart .part-3 .part-3-body button {
-    width: 80px;
-    height: 35px;
-    border-radius: 3px;
-    margin: 0 0 5% 0;
-    border: 1px solid #ccc;
-    background-color: #ececec;
-    color: #333;
+.contact-form span {
+	display: block;
+	font-size: 0.8125em;
+	color: #757575;
+	padding-bottom: 2px;
+	font-family: verdana, arial, helvetica, helve, sans-serif;
+}
+.contact-form input[type="text"], .contact-form textarea {
+	padding: 5px;
+	display: block;
+	width:98%;
+	background:none;
+	border:1px solid #CACACA;
+	outline: none;
+	color: #464646;
+	font-size:1em;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-appearance: none;
+}
+.contact-form textarea {
+	resize: none;
+	height: 120px;
+}
+.contact-form input[type="submit"] {
+	font-size:1em;
+	padding:10px 15px;
+	font-family: 'ambleregular';
+	background:#CD1F25;
+	color: #FFF;
+	border:none;
+	text-decoration: none;
+	outline: 0;
+	cursor:pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	right: 0;
+}
+.contact-form input[type="submit"]:hover {
+	text-shadow: 0px 0px 1px #000;
+	background: #292929;
 }
 
 .rightPart .part-3 .part-3-body iframe {
@@ -694,10 +721,15 @@
         height: 155px;
     }
 
-    .rightPart .part-3 .part-3-body form {
-        width: 100%;
-        margin: 0 auto;
-        text-align: right;
+    .contact-form {
+		width:50%;
+	}
+	.contact-form span {
+	display: block;
+	font-size: 0.8125em;
+	color: #757575;
+	padding-bottom: 5px;
+	font-family: verdana, arial, helvetica, helve, sans-serif;
     }
 }
 
@@ -891,5 +923,18 @@
     .rightPart .part-2 .part-2-body-join {
         height: 155px;
     }
-
+    .contact-form {
+		width:50%;
+		margin-top:20%;
+	}
+	.contact-form span {
+	display: block;
+	font-size: 0.8125em;
+	color: #757575;
+	padding-bottom: 5px;
+	font-family: verdana, arial, helvetica, helve, sans-serif;
+    }
+	.rightPart .part-3 .part-3-body iframe {
+    display:none;
+}
 }

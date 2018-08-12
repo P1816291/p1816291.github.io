@@ -9,6 +9,8 @@
 	<script src="js/allPage.js"></script> 
 	<!-- JQuery Section -->
 	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 	<!-- Style Section -->
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -68,27 +70,39 @@
             <div class="part-3">
                 <div class="part-3-head">Leave us a message</div>
                 <div class="part-3-body part-3-body-join">
-                    <form>
                         <!--Form Validation-->
-                        <p>Name：<input id="name" type="text" placeholder="Please input your name"
-                                       onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')"></p>
-
-                        <p>Phone：<input id="phone" type="text" placeholder="Please input your phonenumber"
-                                        onkeyup="value=value.replace(/[^\d]/g,'') "
-                                        onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
-                        </p>
-
-                        <p>Email：<input id="email" type="text" placeholder="Please input your email"></p>
-                     
-                    </form>
-                    <p style="text-align: center">
-                        <button onclick="doSubmit()">Submit</button>
-                    </p>
+						<div class="contact-form">
+                        <form method="post" action="#" id="infos" name="contactus" onsubmit="return false">
+					    	<div>
+						    	<span><label>Name</label></span>
+						    	<span><input name="name" type="text" class="textbox" placeholder="Please provide your name." 
+								onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')"></span>
+						    </div>
+						    <div>
+						    	<span><label>Email</label></span>
+						    	<span><input name="email" type="text" class="textbox" placeholder="Please provide your email."></span>
+						    </div>
+						    <div>
+						     	<span><label>Phone</label></span>
+						    	<span><input name="phone" type="text" class="textbox" placeholder="Please provide your phonenumber."
+								onkeyup="value=value.replace(/[^\d]/g,'') "
+                                onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"></span>
+						    </div>
+						    <div>
+						    	<span><label>Message</label></span>
+						    	<span><textarea name="message"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="submit"  class="myButton"></span>
+						  </div>
+					    </form>
+				        </div>		
+					<br></br>
                     <!--iframe GoogleMaps-->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11612.501195853163!2d103.86232047275269!3d1.3199998909283037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe20ffa3f56111016!2sBendemeer+delights!5e0!3m2!1sen!2ssg!4v1533996345767" 
-					width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					width="100%" height="28%" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-
+                </div>
             </div>
         </div>
 
@@ -97,9 +111,9 @@
         <div class="part-1">
             <div class="part-1-head">Friendly link</div>
             <div class="part-1-body">
-                <a href="http://www.google.com"> Google &amp;;&amp;;&amp;;</a>/
-                <a href="http://www.facebook.com"> &amp;;&amp;;Facebook &amp;;&amp;;&amp;;</a>/
-                <a href="http://www.youtube.com"> &amp;;Youtube</a>
+                <a href="http://www.google.com"> Google</a>/
+                <a href="http://www.facebook.com">Facebook </a>/
+                <a href="http://www.youtube.com"> Youtube</a>
             </div>
         </div>
     </div>
@@ -127,6 +141,44 @@
             $('#top-nav').addClass('open');
         }
     }
+
+	
+// Form Validation
+$(function() {
+  $("form[name='contactus']").validate({
+    // Specify validation rules
+    rules: {
+	  name: "required",
+	  message:{
+		  required:true,
+		  minlength:50,
+	  },
+      email: {
+        required: true,
+        email: true,
+      },
+	  phone:{
+		  required:true,
+		  maxlength:8,
+	  },
+    },
+    messages: {
+      name: "Please enter your name",
+      message: {
+        required: "Please write your message",
+        minlength: "You need to write at least 30 characters long",
+      },
+      email: "Please enter a valid email address",
+	  phone: {
+		required: "Please enter a valid phonenumber",
+        maxlength: "You need to write at most 8 characters long",
+	  },
+    },
+    submitHandler: function(form) {
+	  alert("Thank you for your feedback!");
+    }
+  });
+});
 </script>
 </body>
 
